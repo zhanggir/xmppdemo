@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/top_radius"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:textSize="21sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="56dp"
+            android:layout_height="28dp"
+            android:background="@drawable/selector_btn_default"
+            android:onClick="@string/onClick"
+            android:text="@string/string_agree"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_default" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="56dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/ok"
+            android:background="@drawable/selector_btn_default"
+            android:onClick="@string/onClick"
+            android:text="@string/string_disagree"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_default" />
+    </RelativeLayout>
+
+</RelativeLayout>
